@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Eingabeformular</title>
+    <script src="script.js" charset="UTF-8"></script>
+
+  </head>
+  <body onload="document.forms[0].elements[0].focus()">
+    <form method="POST" action="action.php" onSubmit="return checkForm();">
+      <div><h1>Ein einfaches Formular mit Texteingabe</h1></div>
+      <div>
+        <label> Vorname: <input type="text" name="givenName" size="20" maxlenght="30">
+        </label>
+        <br>
+        <label> Nachname <input type="text" name="surName" size="20" maxlenght="30">
+        </label>
+      </div>
+      <div>
+        Anrede: 
+        <input name="sex" type="radio" value="male">Herr
+        <input name="sex" type="radio" value="female">Frau
+      </div>
+      <button type="submit" value="Senden">Senden</button>
+      <button type="reset" value="Zurücksetzen">Zurücksetzen</button>
+    </form>
+  </body>
+</html>
